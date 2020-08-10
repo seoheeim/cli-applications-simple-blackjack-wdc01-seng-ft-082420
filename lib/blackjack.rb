@@ -34,7 +34,7 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-def hit?(current_total)
+def hit?(user_hand)
   prompt_user
   user_input = get_user_input
   
