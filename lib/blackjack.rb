@@ -41,7 +41,7 @@ def hit?(current_total)
     
   if user_input == 'h'
     new_draw = deal_card
-    user_hand = current_total + new_draw 
+    current_total += new_draw 
     
   elsif get_user_input == "s".downcase
     card_total = current_total
