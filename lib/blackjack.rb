@@ -43,7 +43,7 @@ def hit?(current_total)
     new_draw = deal_card
     current_total += new_draw 
     
-  elsif get_user_input == "s".downcase
+  elsif user_input == 's'
     card_total = current_total
 
   else
