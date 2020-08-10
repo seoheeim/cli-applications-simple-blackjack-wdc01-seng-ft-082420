@@ -33,9 +33,7 @@ def hit?(current_total)
 end
 
 def invalid_command
-  if user_input != h.downcase || s.downcase
-    puts "Please enter a valid command."
-  end 
+  puts "Please enter a valid command."
 end
 
 #####################################################
