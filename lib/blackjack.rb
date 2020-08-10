@@ -44,10 +44,10 @@ def hit?(current_total)
     current_total += new_draw 
     
   elsif user_input == 's'
-    card_total = current_total
-
+    current_total
+    
   else
-    invalid_command 
+    current_total
   end
   return card_total
 end
