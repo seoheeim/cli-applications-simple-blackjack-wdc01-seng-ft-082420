@@ -44,13 +44,10 @@ def hit?(current_total)
     user_input = get_user_input 
     
   if user_input == 'h'
-    new_draw = deal_card
-    current_total += new_draw 
+    new_card = deal_card
+    current_total += new_card 
     
   elsif user_input == 's'
-    current_total
-    
-  else
     current_total
   end
   current_total
