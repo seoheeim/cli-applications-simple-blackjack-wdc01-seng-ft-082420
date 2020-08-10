@@ -3,7 +3,7 @@ def welcome
 end
 
 def deal_card
-  return rand(1..11)
+  gets rand(1..11)
 end
 
 def display_card_total(card_total)
@@ -23,10 +23,10 @@ def end_game(card_total)
 end
 
 def initial_round
-  first = deal_card
+  first =  deal_card
   second = deal_card
   sum = first + second
-  return display_card_total(sum)
+  display_card_total(sum)
 end
 
 def hit?(current_total)
