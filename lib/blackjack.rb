@@ -34,7 +34,8 @@ def hit?(current_total)
   prompt_user
   user_input = get_user_input
   
-  if user_input != 
+  if user_input != 'h' && user_input != 's'
+    
   if get_user_input == "h".downcase
     new_draw = deal_card
     card_total = current_total + new_draw 
