@@ -30,6 +30,18 @@ def initial_round
 end
 
 def hit?(current_total)
+  prompt_user
+  get_user_input
+  if user_input == "h".downcase
+    new_draw = deal_card
+    card_total = current_total + new_draw 
+  end
+  if user_input == "s".downcase
+    card_total = current_total
+  end
+  else
+    invalid_command 
+  end
 end
 
 def invalid_command
