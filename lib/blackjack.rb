@@ -32,16 +32,17 @@ end
 def hit?(current_total)
   prompt_user
   get_user_input
-  if user_input == "h".downcase
+  if get_user_input == "h".downcase
     new_draw = deal_card
     card_total = current_total + new_draw 
     
-  elsif user_input == "s".downcase
+  elsif get_user_input == "s".downcase
     card_total = current_total
 
   else
     invalid_command 
   end
+  return card_total
 end
 
 def invalid_command
